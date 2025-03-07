@@ -1,0 +1,163 @@
+.header{
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.logo a{
+    color: black;
+    font-size: xxx-large;
+    text-decoration: none;
+}
+
+.ulheader a{
+    
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+    
+}
+
+.ulheader{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    gap: 50px;
+    
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    font-size: xx-large;
+    padding: 50px;
+    margin-top: -25px;
+}
+
+.intro h1 {
+    
+    font-weight: bold;
+    margin-bottom: -25px;
+    
+}
+
+.intro h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: -40px;
+}
+
+.intro p {
+    margin-bottom: 15px;
+}
+
+.image-content img {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white; 
+}
+body{
+    background-color: #FDF1DD;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23d5d3c4' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23acb4aa' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23849691' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%235b7777' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2333595E' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.intro a{
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    transition:300ms ease-in-out;
+}
+
+
+.intro a:hover{
+    background-color: white; 
+    color: black; 
+    transform: translateY(-10px);
+}
+
+/* Existing styles remain unchanged */
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ulheader {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .image-content img {
+        width: 60%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ulheader {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .logo a {
+        font-size: xx-large;
+    }
+
+    .ulheader a {
+        font-size: large;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    .intro h3 {
+        font-size: 24px;
+    }
+
+    .intro p {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .image-content img {
+        width: 80%;
+    }
+}

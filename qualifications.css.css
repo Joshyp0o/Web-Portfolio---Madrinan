@@ -1,0 +1,181 @@
+body{
+    background-color: #FDF1DD;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23d5d3c4' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23acb4aa' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23849691' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%235b7777' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2333595E' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.logo a{
+    color: black;
+    font-size: xxx-large;
+    text-decoration: none;
+}
+
+.ulheader a{
+    
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+    
+}
+
+.ulheader{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    gap: 50px;
+    
+}
+
+.Skills{
+    font-size: 50px;
+    color: black;
+    opacity: 45%;
+    text-align: center;
+}
+
+.theskills ul{
+    text-align: center;
+    margin-top: -10px;
+    transition:300ms ease-in-out;
+}
+
+.sing li{
+    text-decoration: none;
+}
+
+.box{
+    border: 1px ;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    gap: 3px;
+    margin: 50px;
+}
+
+.theskills ul:hover{
+    transform: translateY(-30px);
+    background-color: rgba(255, 255, 255, 0.591);
+}
+
+.box h3, .box22 h3{
+    font-size: 40px;
+}
+
+.box22 p, .box2 p{
+    font-size: 20px;
+}
+
+.box2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.box22{
+    border: 1px ;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    padding: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    
+}
+
+.theskills ul{
+    list-style-type: none;
+}
+
+.achievement{
+    font-size: 50px;
+    color: black;
+    opacity: 45%;
+    text-align: center;
+}
+
+.theachievement ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 200px;
+    margin-top: 50px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ulheader {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .logo a {
+        font-size: xx-large;
+    }
+
+    .ulheader a {
+        font-size: large;
+    }
+
+    .theskills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        padding: 50px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .box22 {
+        width: 90%;
+        padding: 50px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .theachievement ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .theachievement li {
+        margin-bottom: 20px;
+    }
+}

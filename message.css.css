@@ -1,0 +1,127 @@
+
+body {
+    background-color: #FDF1DD;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23d5d3c4' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23acb4aa' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23849691' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%235b7777' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2333595E' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+.header {
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: black;
+    font-size: xxx-large;
+    text-decoration: none;
+}
+
+.ulheader {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    gap: 50px;
+}
+
+.ulheader a {
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+    
+}
+
+#MessageMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.Message-me-container {
+    width: 90%;
+    max-width: 600px;
+    border: black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.input-box1, .input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.input-box1 input, .input-box input, textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.button-container a {
+    display: inline-block;
+    margin-top: 15px;
+    display: block;
+    width: 100%; 
+    max-width: 277px; 
+    padding: 12px; 
+    text-align: center;
+    margin: 15px auto; 
+    border: 1px solid white ;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: large;
+}
+
+.button-container a:hover {
+    background: white;
+    color: black;
+    
+}
+
+@media (max-width: 768px) {
+     .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ulheader {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .logo a {
+        font-size: xx-large;
+    }
+
+    .ulheader a {
+        font-size: large;
+    }
+
+    .input-box1 input {
+        width: 100%;
+    }
+}
